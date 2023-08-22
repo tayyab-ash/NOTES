@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .newnote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60vw;
+            height: 80vh;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid rgb(216, 216, 216);
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .heading {
+            margin-top: 10px;
+            width: 96%;
+            height: 40px;
+            border-bottom: 2px solid #EEEEEE;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .heading input::placeholder {
+            font-weight: 400;
+        }
+
+        .header input {
+            font-family: inherit;
+            position: relative;
+            left: 50px;
+            bottom: 4px;
+            border: none;
+            outline: none;
+            width: 70%;
+            font-size: 1.4em;
+            font-weight: 600;
+            /* background-color: aquamarine; */
+        }
+
+        .textarea {
+            margin: 10px 0 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .textinput {
+            /* margin-top: 10px; */
+            font-family: 'Barlow', sans-serif;
+            padding: 10px 50px 0 50px;
+            font-size: 1em;
+            font-weight: 500;
+            color: rgb(14, 14, 14);
+            width: 96%;
+            min-height: 60vh;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+            border: none;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .modal {
+            /* display: none; */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            backdrop-filter: blur(3px);
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 5% auto 5% auto;
+        }
+
+        .bottom{
+            width: 96%;
+            background-color: rgb(161, 161, 161);
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="id01" class="modal">
+        <div class="newnote modal-content animate" >
+            <header>
+                <div class="heading header">
+                    <input type="text" placeholder="Title">
+                </div>
+            </header>
+
+            <div class="textarea">
+                <textarea class="textinput"></textarea>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body>
+
+</html>

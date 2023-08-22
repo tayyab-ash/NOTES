@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    width: 96%;
+    height: 54px;
+    border-bottom: 2px solid #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.heading-container > h1{
+    /* width: 400px; */
+    letter-spacing: 4px;
+    display: inline;
+    margin-left: 20px;
+}
+
+#profile {
+    margin-right: 8px;
+    width: 40px;
+    opacity: 0.6;
+}
+
+
+
+#search {
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    border-radius: 10px;
+}
+
+#menu {
+    margin-left: 8px;
+    /* margin-top: 6    px; */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.notes {
+    margin-top: 20px;
+    width: 96%;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-notes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+
+}
+
+.add-notes input[type=text] {
+    align-self: flex-start;
+    margin: 0 0 10px 10%;
+    outline: none;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 80%;
+    transition: 0.5s;
+    border: none;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    /* border-radius: 10px; */
+    /* border: none; */
+
+    /* outline: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    border-radius: 10px; */
+}
+
+/* .add-notes input[type=text]:focus{
+    outline: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    border-radius: 10px;
+} */
+
+
+.add-notes input::placeholder {
+    font-weight: 400;
+}
+
+#addTxt {
+    font-family: inherit;
+    outline: none;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 14px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+    /* outline: none;
+    border: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    border-radius: 10px; */
+}
+
+#addTxt:focus {
+    /* border: none; */
+    outline: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+}
+
+button {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    background-color: #0B0A0A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+
+.notescontainer {
+    width: 96%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 280px));
+    gap: 20px;
+
+}
+
+.item {
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    height: 240px;
+    background-color: #fafafa;
+    border: 1px solid rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item .note-data {
+    height: 82%;
+}
+
+.item .note-data .data-heading {
+    height: 16%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.item .note-data .data-text {
+    height: 78%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.item .delete-note {
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    font-size: 1em;
+    /* margin-bottom: 10px; */
+}
+
+
+
+@media screen and (max-width:580px) {
+    .add-notes {
+        height: 240px;
+
+    }
+
+    button {
+        height: 36px;
+        width: 120px;
+        font-size: 0.9em;
+    }
+
+    #addTxt {
+        width: 80%;
+        height: 50%;
+        font-size: 0.9em;
+    }
+
+    .add-notes input[type=text] {
+        margin: 0 0 10px 10%;
+        font-family: inherit;
+        font-size: 1.2em;
+        padding: 8px;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    .notescontainer {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
+        gap: 5px;
+
+    }
+
+    .item {
+        height: 180px;
+    }
+
+    .item .note-data {
+        height: 82%;
+    }
+    
+    .item .note-data .data-heading {
+        height: 16%;
+        word-wrap: break-word;
+        overflow: hidden;
+        font-size: 0.9em;
+    }
+    
+    .item .note-data .data-text {
+        height: 78%;
+        word-wrap: break-word;
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (min-width:580px) and (max-width:767px) {
+    .add-notes {
+        height: 240px;
+
+    }
+
+    button {
+        height: 36px;
+        width: 120px;
+        font-size: 0.9em;
+    }
+
+    #addTxt {
+        width: 80%;
+        height: 50%;
+        font-size: 0.9em;
+    }
+
+    .add-notes input[type=text] {
+        margin: 0 0 10px 10%;
+        font-family: inherit;
+        font-size: 1.2em;
+        padding: 8px;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    .notescontainer {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 260px));
+        gap: 10px;
+
+    }
+
+    .item {
+        height: 210px;
+    }
+
+}
+
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .add-notes {
+        height: 270px;
+    }
+
+    .add-notes input[type=text] {
+        margin: 0 0 10px 10%;
+        font-family: inherit;
+        font-size: 1.2em;
+        padding: 8px;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    #addTxt {
+        width: 80%;
+        height: 55%;
+        font-size: 0.9em;
+    }
+
+    button {
+        height: 38px;
+        width: 160px;
+        font-size: 1em;
+    }
+
+    .notescontainer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 270px));
+        gap: 15px;
+
+    }
+
+    .item {
+        height: 226px;
+    }
+
+}

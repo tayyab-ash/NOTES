@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.supPg {
+  margin-top: 10px;
+  padding-top: 1px;
+  text-align: center;
+  width: 450px;
+  height: 520px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 4px 30px rgb(206, 206, 206);
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: 200px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  background-color: aliceblue;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type="email"] {
+  width: 400px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  background-color: aliceblue;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: rgb(185, 185, 185);
+  box-shadow: 0 0 10px rgb(185, 185, 185);
+}
+
+.container img {
+  display: inline;
+  text-align: center;
+  width: 60px;
+}
+
+.supPg h1 {
+  display: block;
+  margin-top: 20px;
+
+}
+
+.supPg .cr-txt {
+  color: #8a8a8a;
+  font-weight: 500;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 16pt;
+}
+
+button {
+  padding: 16px 0 16px 0px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0B0A0A;
+  color: white;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.other{
+  font-size: 11pt;
+  color: #8a8a8a;
+  margin-top: 18px;
+}
+.or{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+.png img {
+  margin-top: 10px;
+  display: inline;
+  text-align: center;
+  width: 30px;
+}
+
+.whole {
+  text-align: center;
+}

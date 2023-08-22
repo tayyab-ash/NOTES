@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.loginpg{
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 30px rgb(206, 206, 206);
+    /* border: 1px solid rgb(14, 14, 80); */
+}
+
+.loginpg img{
+    margin-top: 25px;
+    width: 50px ;
+}
+.loginpg h1{
+    margin-top: 40px;
+    
+}
+
+input[type=email],
+input[type=password]{
+    padding: 16px 20px;
+    width: 280px;
+    outline: none;
+    border: 1px solid rgb(185, 185, 185);
+    background-color: aliceblue;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;   
+}
+
+input[type=email]:focus,
+input[type=password]:focus{
+    outline: none;
+    border-color: rgb(185, 185, 185);
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    /* border-radius: 10px; */
+}
+
+.mail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 16px 0 16px 0px;
+    width: 280px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0B0A0A;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.95;
+}
+.other{
+    font-size: 11pt;
+    color: #8a8a8a;
+    margin-top: 20px;
+}
+.or{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.png img {
+    margin-top: 10px;
+    display: inline;
+    text-align: center;
+    width: 30px;
+  }
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+@media screen and (max-width: 380px){
+    .loginpg{
+        border: none;
+    }
+}

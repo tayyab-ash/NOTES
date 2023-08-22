@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="heading-container">
+                <!-- <a href=""><img id="menu" src="menu.png" alt="" width="24px"></a> -->
+                <h1>NOTES</h1>
+            </div>
+
+            <input type="text" placeholder="Search" id="search">
+
+            <a href="login.html"><img id="profile" src="User.png" alt="User"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="notes">
+                <div class="add-notes">
+                    <input type="text" placeholder="Title" id="addTitle">
+                    <textarea id="addTxt" name="" placeholder="Write here..."></textarea>
+                    <button id="addBtn">+Add new note</button>
+                </div>
+                
+                <div class="notescontainer" id="notes">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
